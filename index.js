@@ -58,17 +58,17 @@ questionContainer.style.background="pink";
 response.addEventListener("mouseover", ()=>{
 response.style.transform= "rotate(2deg)";
 });
-
+ 
 //-------------------------------------------------
 //keyPress event
 const keypressContainer = document.querySelector(".keypress");
 // console.log(keypressContainer);
 const key = document.getElementById("key");
-// const ring = () =>{
-//    const audio = new Audio();
-//    audio.src="./Enter.mp3";
-//    audio.play();
-// }
+const ring = () =>{
+   const audio = new Audio();
+   audio.src="N56BNFY-click.mp3";
+   audio.play();
+}
 document.addEventListener("keypress", (e) =>{
 key.textContent= e.key;
 
@@ -87,11 +87,11 @@ ring();
 
 const nav = document.querySelector("nav");
 window.addEventListener("scroll", (e) =>{
-console.log(window.scrollY);
-if(Window.scrollY > 120){
-   nav.style.top=0;
-}else{
+if(window.scrollY > 20){
    nav.style.top = "-50px";
+}else{
+   nav.style.top=0;
+ console.log(window.scrollY)
 }
 });
 //-----------------------------------------------------------------------
